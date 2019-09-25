@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/didiermg/protractor-workshop-2019#readme",
   "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.2",
     "save-dev": "^2.0.0",
     "typescript": "^3.6.3"
