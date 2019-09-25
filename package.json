@@ -1,0 +1,36 @@
+{
+  "name": "workshop-protractor",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Protractor",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didiermg/protractor-workshop-2019.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "protractor"
+  ],
+  "author": "didier <damartinez160@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/didiermg/protractor-workshop-2019/issues"
+  },
+  "homepage": "https://github.com/didiermg/protractor-workshop-2019#readme",
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "save-dev": "^2.0.0",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "^12.7.7"
+  }
+}
