@@ -1,6 +1,15 @@
 import { browser } from 'protractor';
-import { MenuContentPage, SignInPage, AddressStepPage, ShippingStepPage, PaymentStepPage,
-  ProductListPage, ProductAddedModalPage, SummaryStepPage, OrderSummaryPage, BankPaymentPage } from '../src/page';
+import { MenuContentPage,
+   SignInPage,
+   AddressStepPage,
+   ShippingStepPage,
+   PaymentStepPage,
+   ProductListPage,
+   ProductAddedModalPage,
+   SummaryStepPage,
+   OrderSummaryPage,
+   BankPaymentPage
+  } from '../src/page';
 
 describe('Buy a t-shirt', () => {
   const menuContentPage: MenuContentPage = new MenuContentPage();
