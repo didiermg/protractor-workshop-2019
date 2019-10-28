@@ -6,9 +6,12 @@ export const config: Config = {
   specs: ['../test/**/*.spec.js'],
   seleniumAddress: 'http://localhost:4444/wd/hub',
   SELENIUM_PROMISE_MANAGER: false,
-  getPageTimeout: 3000,
+  getPageTimeout: 30000,
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
+  },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
   }
 };

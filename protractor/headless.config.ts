@@ -6,7 +6,7 @@ export const config: Config = {
   specs: ['../test/**/*.spec.js'],
   seleniumAddress: 'http://localhost:4444/wd/hub',
   SELENIUM_PROMISE_MANAGER: false,
-  getPageTimeout: 1000,
+  getPageTimeout: 30000,
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
@@ -16,5 +16,8 @@ export const config: Config = {
     chromeOptions: {
       args: ['--headless', '--disable-gpu']
     }
+  },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
   }
 };
