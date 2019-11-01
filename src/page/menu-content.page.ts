@@ -8,7 +8,7 @@ export class MenuContentPage {
   }
 
   public async goToTShirtMenu(): Promise<void> {
-    browser.wait(ExpectedConditions.elementToBeSelected(this.tShirtMenu));
+    await browser.wait(ExpectedConditions.visibilityOf(this.tShirtMenu), 5000);
     await this.tShirtMenu.click();
   }
 }
