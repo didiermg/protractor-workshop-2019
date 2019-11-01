@@ -16,6 +16,7 @@ export class ProductListPage {
       .first();
   }
   public async selectProduct(productName: string): Promise<void> {
+    await browser.wait(this.productList.isDisplayed, 5000);
     const card = this.findByProduct(productName);
     await browser.actions().mouseMove(card.$('img')).perform();
     await card.$('.ajax_add_to_cart_button.btn.btn-default').click();
